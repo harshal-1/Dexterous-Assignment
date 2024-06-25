@@ -9,7 +9,7 @@ Create a Node.js backend that utilizes MongoDB to manage information about vario
 -make sure to have Node.js and npm installed
 -open the terminal and run the following commands
 -npm install
--nodemon index.js
+-node index.js
 
 Now server would start running on Port 3001
 
