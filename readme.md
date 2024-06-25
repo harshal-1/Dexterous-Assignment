@@ -15,7 +15,7 @@ Now server would start running on Port 3001
 
 ## Project Structure
 
-project-directory/
+`project-directory/
 ├── confg/
 │ └── db.js
 ├── controllers/
@@ -31,7 +31,7 @@ project-directory/
 ├── .env
 ├── index.js
 ├── package.json
-└── README.md
+└── README.md`
 
 2. Testing API Endpoints
 
@@ -45,7 +45,7 @@ project-directory/
     Eg:
     Request - GET Request on http://localhost:3001/api/materials
     Response: 200 Ok Success
-    [
+   ` [
         {
             "_id": "60c72b2f9b1d8c1b8c8e4f0a",
             "name": "PLA",
@@ -57,7 +57,7 @@ project-directory/
             "updatedAt": "2021-06-14T09:12:15.812Z"
         }
         ...
-    ]
+    ]`
 
 2) Post Material:
 
@@ -67,17 +67,17 @@ project-directory/
     Eg:
     Request - POST Request on http://localhost:3001/api/materials
     Body - raw JSON
-    {
+   ` {
         "name": "TPU",
         "technology": "FDM",
         "colors": ["Black", "White", "Red"],
         "pricePerGram": 0.08,
         "applicationTypes": ["Flexible Parts", "Wearables"],
         "imageUrl": "https://example.com/images/tpu.jpg"
-    }
+    }`
 
     Response: 200 Ok Success
-    {
+   ` {
         "name": "TPU",
         "technology": "FDM",
         "colors": [
@@ -95,7 +95,7 @@ project-directory/
         "createdAt": "2024-06-25T07:06:08.574Z",
         "updatedAt": "2024-06-25T07:06:08.574Z",
         "__v": 0
-    }
+    }`
 
 3) Get Material By Id:
 
@@ -105,7 +105,7 @@ project-directory/
     Eg:
     Request - GET Request on http://localhost:3001/api/materials/667a60f760e3b40176ea9059
     Response: 200 Ok Success
-    {
+    `{
         "_id": "667a60f760e3b40176ea9059",
         "name": "Resin",
         "technology": "SLA",
@@ -122,7 +122,7 @@ project-directory/
         "createdAt": "2024-06-25T06:17:27.133Z",
         "updatedAt": "2024-06-25T06:22:10.120Z",
         "__v": 0
-    }
+    }`
 
 4) Update Material:
 
@@ -132,17 +132,17 @@ project-directory/
     Eg:
     Request - PUT Request on http://localhost:3001/api/materials/667a6c602ef62b0285916b31
     Body - raw JSON
-    {
+   ` {
         "name": "abcd",
         "technology": "FDM",
         "colors": ["Black", "White", "Red", "Yellow"],
         "pricePerGram": 0.2,
         "applicationTypes": ["Flexible Parts", "Wearables", "Electronics"],
         "imageUrl": "https://example.com/images/abcd.jpg"
-    }
+    }`
 
     Response: 200 Ok Success
-    {
+   ` {
         "_id": "667a6c602ef62b0285916b31",
         "name": "abcd",
         "technology": "FDM",
@@ -162,7 +162,7 @@ project-directory/
         "createdAt": "2024-06-25T07:06:08.574Z",
         "updatedAt": "2024-06-25T07:11:23.384Z",
         "__v": 0
-    }
+    }`
 
 
 5) Delete Material:
@@ -173,7 +173,7 @@ project-directory/
     Eg:
     Request - DELETE Request on http://localhost:3001/api/materials/667a6c602ef62b0285916b31
     Response: 200 Ok Success
-    {
+   ` {
         "_id": "667a6c602ef62b0285916b31",
         "name": "abcd",
         "technology": "FDM",
@@ -193,7 +193,7 @@ project-directory/
         "createdAt": "2024-06-25T07:06:08.574Z",
         "updatedAt": "2024-06-25T07:11:23.384Z",
         "__v": 0
-    }
+    }`
 
 
 3. Upload Image:
@@ -202,3 +202,5 @@ Have created an upload route along with the upload image function which could be
 
  - images would be saved in uploads folder in the root directory
  - uploadRoutes is present in the routes folder along with materialRoutes.
+
+   
